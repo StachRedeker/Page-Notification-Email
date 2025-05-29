@@ -16,5 +16,5 @@ jobs:
         SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
         SKIP_ASSETS : true
         IGNORE_OTHER_FILES: true
-        SLUG: automatic-cache-flusher-for-w3-total-cache
+        SLUG: page-notification-email
         

@@ -1,0 +1,27 @@
+name: Deploy to WordPress.org
+
+on:
+  push:
+    tags:
+      - '*' # This means the workflow runs when any tag is pushed
+
+jobs:
+  deploy:
+    name: Deploy to WordPress.org
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: WordPress Plugin Deploy
+        uses: 10up/action-wordpress-plugin-deploy@stable # You can also use a specific version like @2.0.0
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          # Optional: If your WordPress.org plugin slug is different from your GitHub repo name.
+          SLUG: page-notification-email
+          # Optional: If your plugin assets (banner, icon, screenshots) are in a different directory.
+          # The default is a '.wordpress-org' folder in your repository root.
+          # ASSETS_DIR: assets/wp-org
+          # Optional: If you have a build step for your plugin (e.g., npm install && npm run build).
+          # BUILD_STEP: "npm install && npm run build"

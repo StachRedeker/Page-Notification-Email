@@ -2,7 +2,7 @@
 /*
 Plugin Name: Page Notification Email
 Description: Put and end to manually informing stakeholders when a page is changed. Page Notification Email allows editors to send an update email directly from the WordPress back-end, with an option to add a custom message. The email text is set globally from a WordPress settings page. Includes global BCC option.
-Version: 1.0
+Version: 1.0.0
 Author: Studio Stach
 Author URI: https://www.studiostach.nl/
 License: GPL v3 or later

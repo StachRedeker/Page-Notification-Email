@@ -4,7 +4,7 @@ Tags: email, notification, meta box, settings, post types
 Requires at least: 5.3
 Requires PHP: 7.0
 Tested up to: 6.9
-Stable tag: 1.0
+Stable tag: 1.0.0
 License: GPLv3 or later
 License URI: https://gnu.org/licenses/gpl-3.0.html
 Donate link: https://ko-fi.com/stachredeker
